@@ -71,33 +71,57 @@
 
     </div>
 
+
+
     <div class="formulario_contacto col-lg-6 col-md-6 col">
-      <form action="action_page.php">
+      <form name="joinus" id="joinus">
     
-        <label for="nombres">Nombres</label>
-        <input type="text" id="nombre" name="nombres" placeholder="Ingrese su nombre...">
+        <div class="form-group">
+          <label>Nombres</label>
+          <input class="form-control" type="text" placeholder="Ej: Gabriel Andres" name="name" id="joinusName">
+          <div class="alert alert-danger hide" role="alert" name="joinusNameAlertName">
+              Debes rellenar el nombre
+          </div>
+        </div>
     
-        <label for="apellidos">Apellidos</label>
-        <input type="text" id="apellido" name="apellidos" placeholder="Ingrese sus apellidos...">
-    
-        <label for="correo">Telefono</label>
-        <input type="text" id="correo" name="correo" placeholder="Ingrese su telefono...">
-        </select>
-		
-		<label for="correo">E-mail</label>
-        <input type="text" id="correo" name="correo" placeholder="Ingrese su e-mail...">
-        </select>
-    
-        <label for="comentario">ciudad de residencia</label>
-        <input type="text" id="comentario" placeholder="Ingrese su ciudad de residencia...">
-        <input type="Enviar" value="Enviar">
+        <div class="form-group">
+          <label>Apellidos</label>
+          <input class="form-control" type="text" placeholder="Ej: Reyes Rojas" name="surname" id="joinusSurname">
+          <div class="alert alert-danger hide" role="alert" name="joinusNameAlertSurname">
+              Debes rellenar el apellido
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label>Telefono</label>
+          <input class="form-control" type="text" placeholder="Ej: 968692345" name="fone" id="joinusFone">
+          <div class="alert alert-danger hide" role="alert" name="joinusNameAlertFone">
+              Debes rellenar el telefono
+          </div>
+        </div>
         
+        <div class="form-group">
+          <label>Correo eléctronico</label>
+          <input class="form-control" type="email" placeholder="Ej: tucorreo@gmail.com" name="email" id="joinusEmail">
+          <div class="alert alert-danger hide" role="alert" name="joinusNameAlertCorreo">
+              Debes rellenar el correo
+          </div>
+          <div class="alert alert-danger hide" role="alert" name="joinusNameAlertCorreoFormato">
+            Error de formato en el correo
+          </div>
+        </div>
+
+        <br>
+        
+        <div>
+          <button type="submit" class="btn btn-outline-primary">Enviar</button>
+          <button type="reset" class="btn btn-outline-danger">Borrar formulario</button>
+        </div>
         
       </form>
-    </div>
-    
-
-  </div>  
+    </div>    
+  
   </div>
 
 </body>
